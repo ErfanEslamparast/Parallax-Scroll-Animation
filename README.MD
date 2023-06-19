@@ -1,0 +1,1 @@
+Home page moves with smooth animation when scroll down and goes reverse when scroll up

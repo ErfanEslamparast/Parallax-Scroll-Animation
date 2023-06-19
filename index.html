@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PARALLAX SCROLL ANIMATION</title>
+</head>
+
+<body>
+    <section class="main">
+        <h2 id="text">PARALLAX WEBSITE</h2>
+        <img src="./images/monutain_01.png" id="m1">
+        <img src="./images/trees_01.png" id="t1">
+        <img src="./images/monutain_02.png" id="m2">
+        <img src="./images/trees_02.png" id="t2">
+        <img src="./images/man.png" id="#man">
+        <img src="./images/plants.png" id="#plants">
+    </section>
+
+    <section class="passage">
+        <h2>PARALLAX TITLE</h2>
+        <br><br><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum expedita, excepturi velit ipsam nemo inventore
+            architecto fugiat voluptatibus aliquid dignissimos ut quaerat eum amet aliquam provident eius aspernatur
+            suscipit beatae molestiae quam odio maxime eos modi alias? Veritatis eveniet nobis non ad cupiditate impedit
+            tempora. Tenetur voluptatum ullam hic pariatur laboriosam expedita assumenda voluptates laudantium nostrum
+            eum ab sed possimus, eligendi voluptate deserunt eaque excepturi ipsam itaque rem veritatis odit fuga
+            tempore. Nulla distinctio praesentium quo dolores molestiae expedita sit quasi hic dolorem beatae sequi
+            alias, voluptatum ab. <br><br> Quaerat, cupiditate cumque. Dolor quod tempora animi tempore amet reprehenderit, ea
+            quidem cumque unde! Commodi, eum ratione porro earum nisi labore numquam nemo et quis id quod animi?
+            Perspiciatis quaerat sit facere aliquam nobis quibusdam sunt eaque quasi explicabo dolore reiciendis
+            expedita ex at, est magnam optio soluta qui odio facilis quisquam beatae porro vel accusamus? Dicta maiores
+            magni, dolores enim, id quo itaque sint fugiat alias sunt nemo veritatis sequi? Iusto aliquam error nostrum
+            ex necessitatibus, dolores sequi incidunt nam. Et maiores cupiditate perspiciatis eaque nesciunt corporis ab
+            excepturi non consequuntur obcaecati!<br><br> Perferendis, aliquid id nihil voluptatibus, perspiciatis mollitia,
+            esse vero ducimus laudantium illum ex quasi dolore animi ipsa accusamus consequatur enim obcaecati.
+            Asperiores eveniet quae consequatur blanditiis alias ut quo quasi dolores assumenda ipsa velit repellat
+            distinctio optio recusandae repellendus sit eaque amet minus, incidunt corrupti. Explicabo dicta, a quas
+            corporis distinctio voluptas ea iste officia commodi tempore ipsam dignissimos ipsa natus saepe unde cum
+            error deleniti sint iure culpa! Placeat tempore deleniti quaerat quos cum adipisci animi ducimus culpa,
+            necessitatibus harum dolor dignissimos, quae quis quas? Vitae quos, deleniti laudantium voluptatibus
+            doloremque eaque voluptates nesciunt corrupti molestiae, veniam, unde modi sapiente. Hic fugit, nesciunt
+            pariatur labore aperiam tempora magni officia optio natus blanditiis facere earum, error aut ipsa modi
+            dolore? Magnam error id officia.<br><br> Vel soluta praesentium natus et atque laborum est officia necessitatibus
+            dicta sapiente nesciunt deserunt maiores, culpa eius, obcaecati odit. Doloremque eaque fugit quibusdam atque
+            autem debitis aspernatur, nam aut. Unde iure saepe ex, iusto aliquid vitae esse, qui et impedit ipsa porro!
+            Qui quibusdam quisquam vitae doloribus voluptas fugiat enim dignissimos fuga architecto eos quaerat iure
+            porro delectus, deserunt harum maxime facere ipsa optio expedita nemo. Nesciunt, consequatur cum eligendi
+            obcaecati ex accusantium recusandae odit aperiam ad, ipsum rerum harum at delectus blanditiis, ipsa impedit
+            suscipit a voluptatibus repellat ab! Excepturi fugiat accusantium laboriosam aut.</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#m1",{
+            scrollTrigger:{
+                scrub:true
+            },y:100
+      })
+      gsap.from("#t1",{
+            scrollTrigger:{
+                scrub:true
+            },x:50
+      })
+      gsap.from("#m2",{
+            scrollTrigger:{
+                scrub:true
+            },y:70
+      })
+      gsap.from("#t2",{
+            scrollTrigger:{
+                scrub:true
+            },x:-70
+      })
+      gsap.from("#text",{
+            scrollTrigger:{
+                scrub:true
+            },x:350
+      })
+    </script>
+</body>
+
+</html>
